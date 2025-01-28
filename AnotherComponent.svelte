@@ -1,1 +1,0 @@
-<h1>Here is a new component</h1>
