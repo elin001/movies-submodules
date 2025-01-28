@@ -1,4 +1,6 @@
 <script>
+    //todo better y positioning for div
+
     import { onMount } from 'svelte';
 
     let stars = $state([]);
@@ -42,13 +44,12 @@
     {/each}
 </div>
 
-
 <style>
     .star-div {
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 600;
+        top: 0;
         left: 0;
     }
 
