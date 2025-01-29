@@ -2,6 +2,7 @@
     let { children, headline, dek, author1, author2 } = $props()
 </script>
 
+
 <!-- <div class="aspect-[1/1.2] xl:aspect-[6.5/3] xl:max-w-[1800px] lg:aspect-[5.5/3] md:aspect-[4.5/3] bg-no-repeat bg-cover bg-center relative mx-auto" style="background-image: url('https://arc.stimg.co/startribunemedia/4SPNT7DI36ANT2SOB5N5EJAIJU.jpg?dpr=2&auto=format&w=1800');">
     <div class="w-full px-4 lg:w-[835px] md:w-[705px] absolute bottom-[24px] md:bottom-[64px] left-1/2 -translate-x-1/2">
         <div class="mb-4 mx-auto w-min">

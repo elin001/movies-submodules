@@ -2,7 +2,7 @@
     //todo better y positioning for div
 
     import { onMount } from 'svelte';
-
+    let { headerH, headerW } = $props();
     let stars = $state([]);
 
     function getPosition() {
@@ -14,7 +14,7 @@
     function createStars(count) {
         for (let i = 0; i < count; i++) {
             const position = getPosition();
-            console.log(`Star ${i + 1}:`, position); 
+            // console.log(`Star ${i + 1}:`, position); 
             stars = [...stars, position];
         }
     }
@@ -30,7 +30,7 @@
 
 </script>
 
-<div class="star-div absolute z-1">
+<div class="star-div absolute z-1 max-w-[100%]">
     {#each stars as star}
     <img class="w-[20px]"
         style="position: absolute;
