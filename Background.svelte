@@ -1,37 +1,38 @@
 <script>
-    //todo better y positioning for div
     import { onMount } from 'svelte';
-    let { children, headerH, headerW } = $props();
+    let { children, headerH } = $props();
 
     let stars = $state([]);
 
     function getPosition() {
-    const x = Math.min(Math.random() * window.innerWidth, window.innerWidth - 20);
-    const y = Math.min(Math.random() * document.documentElement.scrollHeight, document.documentElement.scrollHeight - 20); // Ensure y does not exceed scroll height
-    return { x, y };
+        const x = Math.min(Math.random() * window.innerWidth, window.innerWidth - 20);
+        const y = Math.min(Math.random() * document.documentElement.scrollHeight, document.documentElement.scrollHeight - 900); // Ensure y does not exceed scroll height
+        return { x, y };
   }
 
     function createStars(count) {
         for (let i = 0; i < count; i++) {
             const position = getPosition();
             stars = [...stars, position];
+            // console.log(stars, position)
         }
     }
 
     function randomDur(max) {
-        const random = Math.floor(Math.random() * max)+ 6;
+        const random = Math.floor(Math.random() * max)+ 5;
         return random;
     }
 
     onMount(() => {
-        createStars(250);
+        createStars(75);
+        // console.log(randomDur(5))
     })
 
 </script>
 
-<div class="star-div absolute z-1 w-full h-full top-[{headerH}px] left-[{headerW}px] motion-reduce:hidden">
+<div class="star-div absolute z-1 w-screen max-w-screen max-h-screen md:max-w-screen-xl top-[{headerH}px] motion-reduce:hidden">
     {#each stars as star}
-    <img class="w-[20px]"
+    <img class="w-[15px] origin-center animate-[rotate_8s_ease-in-out_infinite]"
         style="position: absolute;
             top: {star.y}px;
             left: {star.x}px;
