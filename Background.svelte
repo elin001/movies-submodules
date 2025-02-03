@@ -30,7 +30,7 @@
 
 </script>
 
-<div class="star-div absolute z-1 w-screen max-w-screen max-h-screen md:max-w-screen-xl top-[{headerH}px] motion-reduce:hidden">
+<div class="star-div absolute z-1 w-[99%] max-h-screen top-[{headerH}px] motion-reduce:hidden">
     {#each stars as star}
     <img class="w-[15px] origin-center animate-[rotate_8s_ease-in-out_infinite]"
         style="position: absolute;
