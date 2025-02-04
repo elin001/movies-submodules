@@ -6,7 +6,7 @@
 
     function getPosition() {
         const x = Math.min(Math.random() * window.innerWidth, window.innerWidth - 20);
-        const y = Math.min(Math.random() * document.documentElement.scrollHeight, document.documentElement.scrollHeight - 900); // Ensure y does not exceed scroll height
+        const y = Math.min(Math.random() * document.documentElement.scrollHeight, document.documentElement.scrollHeight - 2000); // Ensure y does not exceed scroll height
         return { x, y };
   }
 
@@ -30,7 +30,7 @@
 
 </script>
 
-<div class="star-div absolute z-1 w-[99%] max-h-screen top-[{headerH}px] motion-reduce:hidden">
+<div class="star-div absolute z-1 w-[99%] top-[{headerH}px] motion-reduce:hidden overflow-x-clip">
     {#each stars as star}
     <img class="w-[15px] origin-center animate-[rotate_8s_ease-in-out_infinite]"
         style="position: absolute;
