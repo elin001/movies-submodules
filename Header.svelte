@@ -1,6 +1,5 @@
 <script>
     let { children, headline, dek, authors, hero } = $props()
-    console.log(hero)
 </script>
 
 
@@ -33,11 +32,14 @@
         <div class="rt-Box w-full mb-3 flex items-center gap-x-2">
             <div class="rt-Box flex flex-col gap-y-0.5">
                 <div class="rt-Box flex items-center">
-                    {#if authors.length > 1}
-                        <p class="rt-Text font-utility-label-bold-02 text-text-primary relative mr-2">By <a class="!no-underline" href="https://www.startribune.com/eder-campuzano/8801001" target="_blank">{authors[0]}</a>
+                    {#if authors.length > 2}
+                        <p class="rt-Text font-utility-label-bold-02 text-text-primary relative mr-2">By <a class="!no-underline" href="https://www.startribune.com/elliot-hughes/600375018" target="_blank">{authors[0]}</a>
+                        and <a class="!no-underline" href="https://www.startribune.com/yuqing-liu/9090528" target="_blank">{authors[1]}</a> and <a class="!no-underline" href="https://www.startribune.com/bryan-brussee/8455834" target="_blank">{authors[2]}</a></p>
+                    {:else if authors.length > 1} 
+                    <p class="rt-Text font-utility-label-bold-02 text-text-primary relative mr-2">By <a class="!no-underline" href="https://www.startribune.com/eder-campuzano/8801001" target="_blank">{authors[0]}</a>
                         and <a class="!no-underline" href="https://www.startribune.com/elliot-hughes/600375018" target="_blank">{authors[1]}</a></p>
-                    {:else} 
-                        <p class="rt-Text font-utility-label-bold-02 text-text-primary relative mr-2">By <a class="!no-underline" href="https://www.startribune.com/eder-campuzano/8801001" target="_blank">{authors[0]}</a></p>
+                    {:else}
+                    <p class="rt-Text font-utility-label-bold-02 text-text-primary relative mr-2">By <a class="!no-underline" href="https://www.startribune.com/eder-campuzano/8801001" target="_blank">{authors}</a></p>
                     {/if}  
                 </div>
                 <span class="rt-Text text-text-secondary font-utility-label-reg-02">The Minnesota Star Tribune</span>
