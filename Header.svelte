@@ -11,8 +11,8 @@
  <div class="mx-auto xl:max-w-7xl lg:max-w-6xl md:max-w-5xl sm:max-w-4xl px-4"></div> -->
 
 
-    <div class="text-center block py-5">
-        <p class="rt-Text break-words uppercase font-utility-label-bold-caps-02 text-text-color-01">
+    <div class="text-center block py-5 mb-4 mx-auto w-min">
+        <p class="rt-Text uppercase text-[#f3df26] bg-black  p-2 font-utility-label-bold-caps-02 tracking-normal whitespace-nowrap !no-underline">
             <a data-testid="link-button" class="!no-underline" href="https://www.startribune.com/" target="_blank">Today Desk</a>
         </p>
     </div>
@@ -20,7 +20,7 @@
     <!-- end section label -->
 
     <!-- headline -->
-    <h1 class="text-center rt-Heading font-editorial-news-heading-01 max-w-[800px] text-primary rt-r-size-6 rt-r-weight-bold px-3 mx-auto">{headline}</h1>
+    <h1 class="text-center rt-Heading font-publico-text-bold leading-title tracking-tighter lg:text-66 text-56 xs:text-40 max-w-[800px] text-primary rt-r-size-6 rt-r-weight-bold px-3 mx-auto">{headline}</h1>
     <!-- summary -->
     <h2 class="xs:!text-1xl md:!text-2xl px-3 w-full xl:w-2/3 max-w-[800px] font-editorial-body-reg-01 font-regular leading-title  text-center mx-auto my-8 text-primary">{dek}</h2>
 <!-- </div> -->

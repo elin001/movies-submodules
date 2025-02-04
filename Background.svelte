@@ -6,7 +6,7 @@
 
     function getPosition() {
         const x = Math.min(Math.random() * window.innerWidth, window.innerWidth - 20);
-        const y = Math.min(Math.random() * document.documentElement.scrollHeight, document.documentElement.scrollHeight - 2000); // Ensure y does not exceed scroll height
+        const y = Math.min(Math.random() * document.documentElement.scrollHeight, document.documentElement.scrollHeight - 1800); // Ensure y does not exceed scroll height
         return { x, y };
   }
 
