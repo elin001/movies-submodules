@@ -6,15 +6,15 @@
 
     function getPosition() {
         const x = Math.min(Math.random() * window.innerWidth, window.innerWidth - 20);
-        const y = Math.min(Math.random() * document.documentElement.scrollHeight, document.documentElement.scrollHeight - 1800); // Ensure y does not exceed scroll height
+        const y = Math.min(Math.random() * (document.documentElement.scrollHeight - 1000), document.documentElement.scrollHeight);
         return { x, y };
-  }
+    }
 
     function createStars(count) {
         for (let i = 0; i < count; i++) {
             const position = getPosition();
             stars = [...stars, position];
-            // console.log(stars, position)
+            $inspect(stars, position)
         }
     }
 

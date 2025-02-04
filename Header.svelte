@@ -7,9 +7,6 @@
 <div class="xl:max-w-[1550px] lg:max-w-[1000px] xl:aspect-[4/3] lg:aspect-[4/3] md:aspect-[4/3] xs:aspect-[4/3] bg-no-repeat bg-cover xs:bg-right mx-auto relative mb-2" style="background-size:cover;background-position:center;background-image: url('./img/{hero}');">
     <div class="rt-Box absolute bottom-[12px] left-[16px] font-utility-meta-reg-02 text-white">Photo illustration by Anna Boone, The Minnesota Star Tribune</div>
 </div>
-<!-- <div class="caption font-utility-meta-reg-02 text-tertiary xs:text-left md:text-center max-w-4xl mx-auto mb-8 px-4">Lorem ipsum dolor sit amet consectetur adipiscing elit, fusce sociis at montes vitae tempor enim, venenatis tristique feugiat arcu dis ridiculus. <span class="whitespace-nowrap !font-utility-meta-reg-02 !text-tertiary">(Photographer, The Minnesota Star Tribune)</span></div>
- <div class="mx-auto xl:max-w-7xl lg:max-w-6xl md:max-w-5xl sm:max-w-4xl px-4"></div> -->
-
 
     <div class="text-center block py-5 mb-4 mx-auto w-min">
         <p class="rt-Text uppercase text-[#f3df26] bg-black  p-2 font-utility-label-bold-caps-02 tracking-normal whitespace-nowrap !no-underline">
@@ -39,7 +36,7 @@
                     <p class="rt-Text font-utility-label-bold-02 text-text-primary relative mr-2">By <a class="!no-underline" href="https://www.startribune.com/eder-campuzano/8801001" target="_blank">{authors[0]}</a>
                         and <a class="!no-underline" href="https://www.startribune.com/elliot-hughes/600375018" target="_blank">{authors[1]}</a></p>
                     {:else}
-                    <p class="rt-Text font-utility-label-bold-02 text-text-primary relative mr-2">By <a class="!no-underline" href="https://www.startribune.com/eder-campuzano/8801001" target="_blank">{authors}</a></p>
+                    <p class="rt-Text font-utility-label-bold-02 text-text-primary relative">By <a class="!no-underline" href="https://www.startribune.com/eder-campuzano/8801001" target="_blank">{authors}</a></p>
                     {/if}  
                 </div>
                 <span class="rt-Text text-text-secondary font-utility-label-reg-02">The Minnesota Star Tribune</span>
