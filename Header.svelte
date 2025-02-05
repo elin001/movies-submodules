@@ -9,7 +9,7 @@
 </div>
 
     <div class="text-center block py-5 mb-4 mx-auto w-min">
-        <p class="rt-Text uppercase bg-[{spotColor}] text-black  p-2 font-utility-label-bold-caps-02 tracking-normal whitespace-nowrap !no-underline">
+        <p class="rt-Text uppercase text-black p-2 font-utility-label-bold-caps-02 tracking-normal whitespace-nowrap !no-underline" style="background-color: {spotColor}">
             <a data-testid="link-button" class="!no-underline" href="https://www.startribune.com/food-culture" target="_blank">Food & Culture</a>
         </p>
     </div>

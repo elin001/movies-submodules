@@ -14,7 +14,7 @@
         for (let i = 0; i < count; i++) {
             const position = getPosition();
             stars = [...stars, position];
-            $inspect(stars, position)
+            // $inspect(stars, position)
         }
     }
 
