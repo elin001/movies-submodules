@@ -24,11 +24,11 @@
 
 <!-- byline -->
 
-<div class="byline rt-Box col-span-full flex items-center gap-x-2 flex-wrap max-w-2xl px-4 mx-auto font-utility-label-reg-02">
-    <div class="rt-Box col-span-full flex items-center gap-x-2 flex-wrap">
-        <div class="rt-Box w-full mb-3 flex items-center gap-x-2">
-            <div class="rt-Box flex flex-col gap-y-0.5">
-                <div class="rt-Box flex items-center">
+<div class="byline rt-Box col-span-full flex items-center gap-x-2 flex-wrap max-w-2xl px-4 mx-auto justify-center font-utility-label-reg-02 pb-5">
+    <div class="rt-Box col-span-full flex items-center gap-x-2 flex-wrap justify-center">
+        <div class="rt-Box w-full mb-3 flex items-center gap-x-2 justify-center">
+            <div class="rt-Box flex flex-col gap-y-0.5 justify-center">
+                <div class="rt-Box flex items-center justify-center">
                     {#if authors.length > 2}
                         <p class="rt-Text font-utility-label-bold-02 text-text-primary relative mr-2">By <a class="!no-underline" href="https://www.startribune.com/elliot-hughes/600375018" target="_blank">{authors[0]}</a>
                         and <a class="!no-underline" href="https://www.startribune.com/yuqing-liu/9090528" target="_blank">{authors[1]}</a> and <a class="!no-underline" href="https://www.startribune.com/bryan-brussee/8455834" target="_blank">{authors[2]}</a></p>
@@ -39,7 +39,7 @@
                     <p class="rt-Text font-utility-label-bold-02 text-text-primary relative">By <a class="!no-underline" href="https://www.startribune.com/eder-campuzano/8801001" target="_blank">{authors}</a></p>
                     {/if}  
                 </div>
-                <span class="rt-Text text-text-secondary font-utility-label-reg-02">The Minnesota Star Tribune</span>
+                <span class="rt-Text text-text-secondary font-utility-label-reg-02 self-center">The Minnesota Star Tribune</span>
             </div>
         </div>
         <div class="rt-Flex flex rt-r-display-flex rt-r-jc-start">
