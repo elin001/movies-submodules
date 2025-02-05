@@ -1,5 +1,5 @@
 <script>
-    let { children, headline, dek, authors, hero } = $props()
+    let { children, headline, dek, authors, hero, spotColor } = $props()
 </script>
 
 
@@ -9,8 +9,8 @@
 </div>
 
     <div class="text-center block py-5 mb-4 mx-auto w-min">
-        <p class="rt-Text uppercase text-[#f3df26] bg-black  p-2 font-utility-label-bold-caps-02 tracking-normal whitespace-nowrap !no-underline">
-            <a data-testid="link-button" class="!no-underline" href="https://www.startribune.com/" target="_blank">Today Desk</a>
+        <p class="rt-Text uppercase bg-[{spotColor}] text-black  p-2 font-utility-label-bold-caps-02 tracking-normal whitespace-nowrap !no-underline">
+            <a data-testid="link-button" class="!no-underline" href="https://www.startribune.com/food-culture" target="_blank">Food & Culture</a>
         </p>
     </div>
 
