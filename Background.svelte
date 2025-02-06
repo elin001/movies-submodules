@@ -32,7 +32,7 @@
         } while (x > minThreshold && x < maxThreshold);
 
         // Generate y position
-        y = Math.min(Math.random() * document.documentElement.scrollHeight, document.documentElement.scrollHeight - 2100);
+        y = Math.min(Math.random() * document.documentElement.scrollHeight, document.documentElement.scrollHeight - 1500);
 
         return { x, y };
     }
