@@ -17,7 +17,7 @@
     <!-- end section label -->
 
     <!-- headline -->
-    <h1 class="text-center rt-Heading font-publico-text-bold leading-title tracking-tighter lg:text-66 text-56 xs:text-40 max-w-[1000px] text-primary rt-r-size-6 rt-r-weight-bold px-3 mx-auto">{headline}</h1>
+    <h1 class="text-center rt-Heading font-publico-headline-black leading-heading-extra-tight  tracking-tight  lg:text-66 text-56 xs:text-40 max-w-[1000px] text-primary rt-r-size-6 rt-r-weight-bold px-3 mx-auto">{headline}</h1>
     <!-- summary -->
     <h2 class="xs:!text-1xl md:!text-2xl px-3 w-full xl:w-2/3 max-w-[800px] font-editorial-body-reg-01 font-regular leading-title  text-center mx-auto my-8 text-primary">{dek}</h2>
 <!-- </div> -->
