@@ -21,42 +21,40 @@
 
 
 
-<nav class="sticky z-20 flex flex-row-reverse bottom-2 mr-2 items-center">
-    <button on:click={handleClick} class="font-graphik-semibold z-20 md:left-full rounded-md border-2 border-black max-w-40 max-h-20 shadow-md py-2 px-5 text-black bg-gray-300" style="--hover-bg-color: {spotColor}">Minnesota. Movies. '90s.</button>
+<nav class="sticky z-20 flex flex-row-reverse bottom-3 mr-2 items-center">
+    <button on:click={handleClick} class="font-graphik-semibold text-11 md:text-16 z-20 rounded-full md:left-full border-2 w-[80px] h-[80px] md:w-[150px] md:h-[150px] shadow-md py-2 md:px-5 text-black bg-gray-200" style="--hover-bg-color: {spotColor}">Minnesota. Movies. '90s.</button>
     <ul id="nav">
-        <li><div class="nav-item hidden bottom-10 right-0 my-3 rounded-md max-w-64 border-2 py-2 px-5 border-black text-black bg-gray-300 font-graphik-semibold" style="--hover-bg-color: {spotColor}"><a href="https://startribune.com" target="_blank">Story 1</a></div></li>
-        <li><div class="nav-item hidden top-3 left-0 my-3 rounded-md max-w-64 border-2 py-2 px-5 border-black text-black bg-gray-300 font-graphik-semibold" style="--hover-bg-color: {spotColor}"><a href="https://startribune.com" target="_blank">Story 2</a></div></li>
-        <li><div class="nav-item hidden top-5 left-0 my-3 rounded-md max-w-64 border-2 py-2 px-5 border-black text-black bg-gray-300 font-graphik-semibold" style="--hover-bg-color: {spotColor}"><a href="https://startribune.com" target="_blank">Story 3</a></div></li>
+        <li class="cursor-pointer"><div class="nav-item hidden text-11 md:text-16 bottom-[100px] right-1 md:bottom-[160px] md:right-1 rounded-full w-[60px] h-[60px] md:w-[80px] md:h-[80px] max-w-64 border-2 py-5 md:py-7 px-2 text-black bg-gray-200 font-graphik-semibold" style="--hover-bg-color: #4FBDED"><a href="https://startribune.com" target="_blank">Story 1</a></div></li>
+        <li class="cursor-pointer"><div class="nav-item hidden text-11 md:text-16 bottom-[70px] right-[70px] md:bottom-[120px] md:right-32 rounded-full w-[60px] h-[60px] md:w-[80px] md:h-[80px] max-w-64 border-2 py-5 md:py-7 px-2  text-black bg-gray-200 font-graphik-semibold" style="--hover-bg-color: #F3DF26"><a href="https://startribune.com" target="_blank">Story 2</a></div></li>
+        <li class="cursor-pointer"><div class="nav-item hidden text-11 md:text-16 bottom-0 right-[90px] md:bottom-0 md:right-40 rounded-full w-[60px] h-[60px] md:w-[80px] md:h-[80px] max-w-64 border-2 py-5 md:py-7 px-2 text-black bg-gray-200 font-graphik-semibold" style="--hover-bg-color: #BFAADF"><a href="https://startribune.com" target="_blank">Story 3</a></div></li>
     </ul>    
 </nav>
 
 <style>
-    button:hover {
-        transform: rotate(7deg);
-        transition: 0.5s ease;
-        @media prefers-reduced-motion {
-            transition: none;
-        }
+    button {
+        transform: rotate(0deg);
     }
 
-    /* @keyframes rotate {
-        0%{
-            transform: rotate(0deg) scale(0);
-        }
-        100%{
-            transform: rotate(20deg) scale(0.5);
-        }
-    } */
-
-    
-    .nav-item {
-        transition: background-color 0.1s ease;
+    button:hover {
+        transition: transform 0.5s ease-in-out, background-color 0.1s;
+        transform: translateY(-1rem);
+        background-color: var(--hover-bg-color);
         @media prefers-reduced-motion {
             transition: none;
         }
+
+    }
+    
+    .nav-item {
+        transform: rotate(0deg);
     }
 
     .nav-item:hover {
+        transition: transform 0.5s ease-in-out, background-color 0.1s;
+        transform: translateY(-1rem);
         background-color: var(--hover-bg-color);
+        @media prefers-reduced-motion {
+            transition: none;
+        }
     }
 </style>
