@@ -1,10 +1,10 @@
 <script>
-    let { children, headline, dek, authors, hero, spotColor } = $props()
+    let { children, headline, dek, authors, spotColor } = $props()
 </script>
 
 
 
-<div class="xl:max-w-[1550px] lg:max-w-[1000px] xl:aspect-[4/3] lg:aspect-[4/3] md:aspect-[4/3] xs:aspect-[4/3] bg-no-repeat bg-cover xs:bg-right mx-auto relative mb-2" style="background-size:cover;background-position:center;background-image: url('./img/{hero}');">
+<div class="xl:max-w-[1550px] lg:max-w-[1000px] xl:aspect-[4/3] lg:aspect-[4/3] md:aspect-[4/3] xs:aspect-[4/3] bg-no-repeat bg-cover xs:bg-right mx-auto relative mb-2" style="background-size:cover;background-position:center;background-image: url('https://static.startribune.com/news/projects/all/2025-MOVIES.rankings/assets/MOVIES012725.ranking.png');">
     <div class="rt-Box absolute bottom-[12px] left-[16px] font-utility-meta-reg-02 text-white">Photo illustration by Anna Boone, The Minnesota Star Tribune</div>
 </div>
 

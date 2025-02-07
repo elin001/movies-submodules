@@ -63,7 +63,7 @@
 
 </script>
 
-<div class="star-div absolute z-1 w-[99%] top-[{headerH}px] motion-reduce:hidden overflow-x-clip">
+<div class="star-div absolute z-1 w-[99%] max-h-screen top-[{headerH}px] motion-reduce:hidden overflow-x-clip">
     {#each stars as star}
     <img class="w-[15px] origin-center animate-[rotate_8s_ease-in-out_infinite]"
         style="position: absolute;
@@ -71,7 +71,7 @@
             left: {star.x}px;
             animation-duration: {randomDur(3)}s"
         id="star"
-        src="./img/star.svg"
+        src="https://static.startribune.com/news/projects/all/2025-MOVIES.rankings/assets/star.svg"
         alt="a star"
     />
     {/each}
