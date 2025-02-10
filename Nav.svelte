@@ -26,7 +26,7 @@
     <ul id="nav">
         <li class="cursor-pointer"><div class="nav-item hidden text-11 leading-none md:text-12 md:leading-3 bottom-[110px] right-1 md:bottom-[160px] md:right-1 rounded-full w-[80px] h-[80px] md:w-[100px] md:h-[100px] max-w-64 border-2 py-4 md:py-6 shadow-md px-2 text-black bg-gray-200 font-graphik-semibold text-center" style="--hover-bg-color: #4FBDED"><a href="https://startribune.com" target="_blank">How '90s movies captured Minnesota</a></div></li>
         <li class="cursor-pointer"><div class="nav-item hidden text-11 leading-none md:text-12 md:leading-3 bottom-[80px] right-[80px] md:bottom-[120px] md:right-32 rounded-full w-[80px] h-[80px] md:w-[100px] md:h-[100px] max-w-64 border-2 py-4 md:py-8 shadow-md px-2  text-black bg-gray-200 font-graphik-semibold text-center" style="--hover-bg-color: #F3DF26"><a href="https://startribune.com" target="_blank">The 10 most Minnesotan '90s films</a></div></li>
-        <li class="cursor-pointer"><div class="nav-item hidden text-11 leading-none md:text-12 md:leading-3 bottom-0 right-[100px] md:bottom-0 md:right-40 rounded-full w-[80px] h-[80px] md:w-[100px] md:h-[100px] max-w-64 border-2 py-2 md:py-7 shadow-md px-2 text-black bg-gray-200 font-graphik-semibold text-center" style="--hover-bg-color: #BFAADF"><a href="https://startribune.com" target="_blank">Why so many '90s movies filmed in Minnesota</a></div></li>
+        <li class="cursor-pointer"><div class="nav-item hidden text-11 leading-none md:text-12 md:leading-3 bottom-0 right-[110px] md:bottom-0 md:right-40 rounded-full w-[80px] h-[80px] md:w-[100px] md:h-[100px] max-w-64 border-2 py-2 md:py-7 shadow-md px-2 text-black bg-gray-200 font-graphik-semibold text-center" style="--hover-bg-color: #BFAADF"><a href="https://startribune.com" target="_blank">Why so many '90s movies filmed in Minnesota</a></div></li>
     </ul>    
 </nav>
 
@@ -39,8 +39,13 @@
         transition: transform 0.5s ease-in-out, background-color 0.1s;
         transform: translateY(-1rem);
         background-color: var(--hover-bg-color);
+        
         @media prefers-reduced-motion {
             transition: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            transform: translateY(-0.5rem);
         }
 
     }
@@ -53,8 +58,13 @@
         transition: transform 0.5s ease-in-out, background-color 0.1s;
         transform: translateY(-1rem);
         background-color: var(--hover-bg-color);
+        
         @media prefers-reduced-motion {
             transition: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            transform: translateY(-0.5rem);
         }
     }
 </style>
