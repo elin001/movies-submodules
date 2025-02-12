@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="rt-Flex flex rt-r-display-flex rt-r-jc-start">
-            <span class="rt-Text font-utility-label-reg-caps-03 text-text-secondary !text-[.6875rem] pb-3">February 15, 2025 at 7:01am</span>
+            <span class="rt-Text font-utility-label-reg-caps-03 text-text-secondary !text-[.6875rem] pb-3">February 17, 2025 at 6:30am</span>
         </div>
     </div>
 </div>
